@@ -68,27 +68,27 @@ def get_order_data(invoice_num,filename,directory):
     if selected_sheet['B24'].value is not None:
         order_data['Price0'] = f'${order_data['Price0']:,.2f}'
         order_data['Amount0'] = f'${order_data['Amount0']:,.2f}'
-        order_data['Quantity0'] = f'${order_data['Quantity0']:,.2f}'
+        order_data['Quantity0'] = str(order_data['Quantity0'])
 
     if selected_sheet['B25'].value is not None:
         order_data['Price1'] = f'${order_data['Price1']:,.2f}'
         order_data['Amount1'] = f'${order_data['Amount1']:,.2f}'
-        order_data['Quantity1'] = f'${order_data['Quantity1']:,.2f}'
+        order_data['Quantity1'] = str(order_data['Quantity1'])
 
     if selected_sheet['B26'].value is not None:
         order_data['Price2'] = f'${order_data['Price2']:,.2f}'
         order_data['Amount2'] = f'${order_data['Amount2']:,.2f}'
-        order_data['Quantity2'] = f'${order_data['Quantity2']:,.2f}'
+        order_data['Quantity2'] = str(order_data['Quantity2'])
 
     if selected_sheet['B27'].value is not None:
         order_data['Price3'] = f'${order_data['Price3']:,.2f}'
         order_data['Amount3'] = f'${order_data['Amount3']:,.2f}'
-        order_data['Quantity3'] = f'${order_data['Quantity3']:,.2f}'
+        order_data['Quantity3'] = str(order_data['Quantity3'])
 
     if selected_sheet['B28'].value is not None:
         order_data['Price4'] = f'${order_data['Price4']:,.2f}'
         order_data['Amount4'] = f'${order_data['Amount4']:,.2f}'
-        order_data['Quantity4'] = f'${order_data['Quantity4']:,.2f}'
+        order_data['Quantity4'] = str(order_data['Quantity4'])
 
     order_data['Total'] = f'${order_data['Total']:,.2f}'
 
